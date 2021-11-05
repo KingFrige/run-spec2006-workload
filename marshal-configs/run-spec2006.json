@@ -1,0 +1,7 @@
+{
+  "name" : "run-spec2006",
+  "base" : "br-base.json",
+  "workdir" : "..",
+  "overlay" : "overlay",
+  "command" : "./run-spec2006.sh"
+}
