@@ -1,13 +1,28 @@
-#!/bin/sh
+#!/bin/bash
 
 mkdir /data
 
 mount /dev/mmcblk0p2 /data
 
+if [$? -ne 0];then
+  echo "============"
+  echo "fail!"
+  echo "============"
+  exit
+else
+  echo "============"
+  echo "mount data!"
+  echo "============"
+fi
+
+ls -l /data
+
 cd /data/board-benchmarks
-./run-spec2006.sh
+./run-spec2006-tasks.sh
 
 sync; umount /data
+
+ls -l /data
 
 echo ""
 echo "============"
