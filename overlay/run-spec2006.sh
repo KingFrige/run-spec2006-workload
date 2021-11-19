@@ -10,10 +10,10 @@ cd /data/board-benchmarks
 sync; umount /data
 
 echo ""
-echo "========"
-echo "poweroff"
-echo "========"
+echo "============"
+echo "task finish!"
+echo "============"
 echo ""
 
-poweroff -f
+# poweroff -f
 
