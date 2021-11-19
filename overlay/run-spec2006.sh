@@ -20,7 +20,7 @@ ls -l /data
 cd /data/board-benchmarks
 ./run-spec2006-tasks.sh
 
-sync; umount /data
+sync;
 
 ls -l /data
 
@@ -30,5 +30,6 @@ echo "task finish!"
 echo "============"
 echo ""
 
+# umount /data
 # poweroff -f
 
